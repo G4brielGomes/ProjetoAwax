@@ -65,6 +65,19 @@ justify-content: flex-end;
     border-bottom: 5px solid #b28756;
     color: #ccc;
 }
+.button {
+    display: inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 /* --------------------------BANNER CARROCEU---------------------------------   */
 .banner {
     height: calc(100vh - 100px);
@@ -105,18 +118,7 @@ justify-content: flex-end;
     text-transform: uppercase;
     margin-top: 20px;
 }
-.banner a {
-    display: block;
-    background-color: #b28756;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600px;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
+
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -163,20 +165,46 @@ justify-content: flex-end;
 .default .section-body {
     max-width: 1140px;
     margin:auto;
-    min-height: 100px;
-    background-color: #ccc;
+    
 }
 .default.light{
     background-color:#f7f7f7 ;
 }
-.default.light .section-title {
+.default.light .section-title,
+.default.light .section-body {
     color: #000;
 }
 .default.dark {
     background-color: #000;
 }
-.default.dark .section-title {
+.default.dark .section-title,
+.default.dark .section-body {
     color: #fff;
 }
 
 
+
+
+
+
+/*  ABOUT US  */
+
+.section-aboutus {
+    display: flex;
+}
+.section-aboutus--left {
+    flex: 1;
+}
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+.section-aboutus--rigth {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--rigth img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333 ;
+}
